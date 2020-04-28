@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Form from "./components/Form"
 import { calculateBmi } from "./helpers/bmiHelper"
+import { UndrawHealthyHabit } from "react-undraw-illustrations"
 
 
  class App extends Component {
@@ -21,14 +22,22 @@ import { calculateBmi } from "./helpers/bmiHelper"
 
   render() {
     return (
-      <div className="ui inverted very padded segment">
+      <div className="ui inverted very padded segment" style={{height: "1000px"}}>
         <Form
         weight={this.state.weight}
         height={this.state.height}
         onChangeHandler={this.onChangeHandler}
         onSubmitHandler={this.onSubmitHandler}
         />
-      </div>
+        <div className="ui big image">
+          <UndrawHealthyHabit
+            primaryColor='#6c68fb'
+            accentColor='#43d1a0'
+            height='500px'
+            skinColor="orange"
+          />
+        </div> 
+       </div>
     );
   }
 }
