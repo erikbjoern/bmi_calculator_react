@@ -30,4 +30,4 @@ You will also see any lint errors in the console.
 
 `$ yarn cypress` to launch the feature test 'User can calculate their BMI'.
 
-##Under MIT License
+## Under MIT License
