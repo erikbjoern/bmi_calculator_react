@@ -21,7 +21,7 @@ import { calculateBmi } from "./helpers/bmiHelper"
 
   render() {
     return (
-      <div>
+      <div className="ui inverted very padded segment">
         <Form
         weight={this.state.weight}
         height={this.state.height}
