@@ -29,3 +29,5 @@ You will also see any lint errors in the console.
 `$ yarn test` to launch the unit test runner in the interactive watch mode.
 
 `$ yarn cypress` to launch the feature test 'User can calculate their BMI'.
+
+##Under MIT License
