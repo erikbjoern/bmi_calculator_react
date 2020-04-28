@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Form from "./components/Form"
 import { calculateBmi } from "./helpers/bmiHelper"
 import { UndrawHealthyHabit } from "react-undraw-illustrations"
+import Message from './components/Message';
 
 
  class App extends Component {
@@ -37,7 +38,13 @@ import { UndrawHealthyHabit } from "react-undraw-illustrations"
             skinColor="orange"
           />
         </div> 
-       </div>
+        {this.state.bmiValue && (
+          <Message
+          bmiValue={this.state.bmiValue}
+          bmiMessage={this.state.bmiMessage}
+          />
+        )}
+      </div>  
     );
   }
 }
