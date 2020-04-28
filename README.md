@@ -1,9 +1,9 @@
-# BMI Calculator in React 
+# BMI Calculator made with React 
 [Deployed app on Netlify](https://app.netlify.com/sites/unruffled-banach-32e2e7/overview)
 
+## What we used
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## What we used
 ### Semantic UI
 
 Semantic UI trough https://cdnjs.com/ for styling. 
