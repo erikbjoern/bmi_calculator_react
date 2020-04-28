@@ -23,13 +23,15 @@ import Message from './components/Message';
 
   render() {
     return (
-      <div className="ui inverted very padded segment" style={{height: "1000px"}}>
+      <div className="ui inverted very padded segment" style={{height: "1000px", display: "flex", flexDirection: "column", padding: "0 30%"}}>
+        <div style={{padding: "20px"}}>
         <Form
         weight={this.state.weight}
         height={this.state.height}
         onChangeHandler={this.onChangeHandler}
         onSubmitHandler={this.onSubmitHandler}
         />
+        </div>
         <div className="ui big image">
           <UndrawHealthyHabit
             primaryColor='#6c68fb'
@@ -37,13 +39,15 @@ import Message from './components/Message';
             height='500px'
             skinColor="orange"
           />
-        </div> 
+        </div>
+        <div style={{fontSize: "300%", padding: "20px"}}>
         {this.state.bmiValue && (
           <Message
           bmiValue={this.state.bmiValue}
           bmiMessage={this.state.bmiMessage}
           />
         )}
+        </div>
       </div>  
     );
   }
